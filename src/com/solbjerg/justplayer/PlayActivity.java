@@ -116,6 +116,9 @@ public class PlayActivity extends Activity {
 		toggleButton();
 	}
 	
+	/**
+	 * Start the media player and update related UI
+	 */
 	private void play() {
 		mediaPlayer.start();
 		play.setImageResource(R.drawable.ic_btn_pause);
