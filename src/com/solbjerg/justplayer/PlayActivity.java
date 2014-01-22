@@ -75,6 +75,11 @@ public class PlayActivity extends Activity {
 		initialBySong(currentSong, true);
 	}
 	
+	/**
+	 * Initial the related information and the media player by the song played last time.
+	 * @param path path of the song player last time
+	 * @param initialFileList update the array of the same directory's songs
+	 */
 	private void initialBySong(String path, boolean initialFileList) {
 		File file = new File(path);
 		if(file.exists() && file.canRead() && file.isFile()) {
